@@ -1,0 +1,16 @@
+@import '../../styles/main.scss';
+
+.Input {
+  // background-color: #EFEFEF;
+  background-color: $input-bg-color;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: $white-100;
+  width: 280px;
+
+  &::placeholder {
+    font-size: 16px;
+    color: #b6b6b6;
+  }
+}

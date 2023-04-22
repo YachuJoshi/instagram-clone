@@ -1,0 +1,52 @@
+@import '../../styles/main.scss';
+
+.Wrapper {
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  .Article {
+    position: relative;
+    z-index: 15;
+    border-radius: 10px;
+    background-color: $black-200;
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+
+    @include media-breakpoint-up(sm) {
+      width: 500px;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 600px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 700px;
+    }
+
+    .User {
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .DP {
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        overflow: hidden;
+      }
+
+      .Username {
+        font-weight: 500;
+        font-size: 17px;
+      }
+    }
+  }
+}

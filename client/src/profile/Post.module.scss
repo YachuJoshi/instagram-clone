@@ -1,0 +1,27 @@
+@import '../../styles/main.scss';
+
+.Post {
+  position: relative;
+  cursor: pointer;
+}
+
+.StackWrapper {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+
+  @include media-breakpoint-up(md) {
+    top: 8px;
+    right: 8px;
+  }
+
+  .Stack {
+    height: 32px;
+    width: 32px;
+
+    @include media-breakpoint-up(sm) {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}

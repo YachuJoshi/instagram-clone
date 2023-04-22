@@ -1,0 +1,43 @@
+@import '../../styles/main.scss';
+
+ul.IconList {
+  display: flex;
+  flex-flow: row-reverse;
+  gap: $spacing-lg;
+
+  @include media-breakpoint-up(sm) {
+    flex-flow: row;
+  }
+
+  @include media-breakpoint-up(lg) {
+    gap: 24px;
+  }
+
+  li.Item {
+    &.Hidden {
+      display: none;
+
+      @include media-breakpoint-up(sm) {
+        display: block;
+      }
+    }
+
+    .Icon {
+      height: 28px;
+      width: 28px;
+
+      @include media-breakpoint-up(sm) {
+        height: 24px;
+        width: 24px;
+      }
+    }
+
+    .Figure {
+      position: relative;
+      height: 28px;
+      width: 28px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+}

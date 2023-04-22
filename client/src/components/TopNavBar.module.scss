@@ -1,0 +1,51 @@
+@import '../../styles/main.scss';
+
+.Header {
+  position: fixed;
+  z-index: 10;
+  background-color: $body-bg-color;
+  top: 0;
+  width: 100%;
+
+  .Nav {
+    padding: $spacing-lg $spacing-md;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media-breakpoint-up(lg) {
+      padding: $spacing-lg 0;
+    }
+
+    .Logo {
+      $height: 50px;
+
+      height: $height;
+      width: $height * 2.8;
+
+      @include media-breakpoint-up(sm) {
+        height: 42px;
+      }
+    }
+
+    .InputContainer {
+      display: none;
+
+      @include media-breakpoint-up(md) {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+        padding: 10px 24px;
+        // background-color: #EFEFEF;
+        background-color: $input-bg-color;
+        border-radius: $spacing-sm;
+      }
+
+      .Icon {
+        height: 16px;
+        width: 16px;
+        color: #c3c1c1;
+      }
+    }
+  }
+}
